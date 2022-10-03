@@ -1,0 +1,52 @@
+body {
+  background-image: url(/imagens/coca-cola-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background-color: #fffcfc;
+  border-radius: 4px;
+}
+.header_title {
+  font-family: "Passions Conflict", cursive;
+  font-weight: 600;
+  font-size: 40px;
+}
+.form-section {
+  height: auto;
+  background-color: #fffcfc;
+}
+.section-topLogo {
+  width: 200px;
+}
+.send_button {
+  width: 200px;
+}
+
+footer {
+  background-color: #fffcfc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon_footer_on_left {
+  width: 35px;
+}
+.icon_footer_on_right {
+  width: 30px;
+}
+@media (max-width: 515px) {
+  .footer_icons_right {
+    display: grid;
+    grid-template-areas:
+      "github"
+      "linkedin";
+  }
+  .onTop {
+    grid-area: github;
+  }
+  .onBottom {
+    grid-area: linkedin;
+  }
+}
